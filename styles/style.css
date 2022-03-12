@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin:0;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    background-image: url("./images/pattern-background-desktop.svg");
+    top:0;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.hero{
+    display: block;
+    height: 220px;
+    margin-bottom: 45px;
+}
+
+.bg{
+    height: 700px;
+    width:450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 15px 12px 0px rgba(0,0,0,0.15); 
+    box-shadow: 2px 15px 12px 0px rgba(0,0,0,0.15);
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color:hsla(232, 12%, 52%, 1);
+}
+
+.block-plan{
+    display:flex;
+    background-color: rgba(248, 248, 255, 1);
+    border-radius: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 305px;
+    height: 100px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.left{
+    display: flex;
+}
+
+.icon-music{
+    width:50px;
+    margin-right: 20px;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 18px;
+    color:hsl(223, 47%, 23%);
+}
+
+.plan{
+    color:hsl(223, 47%, 23%);
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: 0.015em;
+}
+
+.price{
+    color:hsl(224, 23%, 55%);
+    font-size: 16px;
+    letter-spacing: 0.015em;
+}
+
+.payment{
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    width: 355px;
+    height: 50px;
+    border-radius: 0.75em;
+    cursor: pointer;
+    color:white;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 2px 15px 12px 0px rgba(0,0,0,0.15); 
+    box-shadow: 2px 15px 12px 0px rgba(0,0,0,0.15);
+}
+
+
+.payment:hover{
+    background-color: hsl(245, 83%, 68%);
+    transition: 0.5s;
+}
+
+.cancel{
+    background:none;
+    border: none;
+    width: 355px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.015em;
+    color:hsl(224, 23%, 55%);
+}
+
+.cancel:hover{
+    font-weight: 900;
+    color:hsl(223, 47%, 23%);
+    transition: 0.5s;
+}
+
+a{
+    font-size: 15px;
+}
+
+a:hover{
+    color:hsl(245, 83%, 68%);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+
+    .bg{
+        height: 565px;
+        width:325px;
+        margin:50px;
+    }
+
+    .hero{
+        height: 160px;
+        margin-bottom: 35px;
+    }
+
+    .block-plan{
+        width:225px;
+    }
+
+    .payment{
+        width:275px;
+        margin-bottom: 0px;
+    }
+
+    .cancel{
+        margin-bottom: 20px;
+    }
+}
